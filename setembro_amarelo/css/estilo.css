@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+.navbar{
+	background: #fff;
+}
+
+/*Configurações Padrões*/
+
+ul.menu, .menu li, .menu a{
+	margin: 0;
+	padding: 10px 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+ul.menu ul{
+	position: absolute;
+	display: none;
+	box-shadow: 3px 3px 2px #333;
+}
+
+/*Configurações nível 1*/
+
+ul.menu{
+	float: right;
+	font-family: verdana, Gerneva, Sans-serif;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+
+.menu li{
+	float: left;
+	width: auto;
+	position: relative;
+}
+
+.menu li a{
+	display: block;
+	padding: 0 20px; 
+	line-height: 45px;
+	height: 45px;
+	float: left;
+	transition: all 0.1s linear;
+}
+
+/*Configurações nível 2*/
+
+.menu li:hover > ul.submenu-1{
+	display: block;
+	top: 45px;
+	left: 0;
+	padding: 5px;
+	width: 200px;
+	border-radius: 0 0 5px 5px;
+	z-index: 40
+}
+
+.menu ul.submenu-1 a{
+	width: 160px;
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+/*Configurações de cores*/
+
+/*Nível 1*/
+.menu{background: #fff;}
+.menu a{color: #000;}
+.menu li:hover > a{background: #FFF8DC; color: #000;}
+
+/*Nível 2*/
+.submenu-1{background: #FFFACD;}
+.submenu-1 a{color: #000;}
+.submenu-1 li:hover > a{background: #FAFAD2;}
+
+/* Propriedade display*/
+.teste1 ul li{
+	display: inline;
+}
+
+.teste2 b{
+	display: block;
+}
+
+/*Contato*/
+.contato{
+	background: #fff;
+	padding: 10px 0;
+}
+
+.contato .info{
+	float: right;
+}
+.contato .info p{
+	display: inline;
+	padding: 0 20px;
+}
+
+/*Introdução*/
+.introducao{
+	width: 100%;
+	background-image: url(../img/setembro-amarelo.png);
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.conteudo{
+	margin-top: 10px;
+}
+
+.conteudo .conteudoTexto h1{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: .1em;
+	font-family: comic sans;
+	font-weight: bold;
+}
+
+.conteudo .conteudoTexto p{
+	text-align: justify;
+	margin-top: 5px;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+/*Cuidados*/
+.cuidados{
+	width: 100%;
+	background: #e6e6e6;
+	padding: 20px 0;
+}
+
+.cuidados h1{
+	margin-bottom: 20px;
+	font-size: 30px;
+	text-align: center;
+	font-family: Merriweather, serif;
+	letter-spacing: .1em;
+}
+
+.projetos{
+	margin-top: 20px;
+}
+
+.projetos .grid-8 h2{
+	font-size: 22px;
+	text-align: center;
+	letter-spacing: .1em;
+	margin-bottom: 10px;
+	border-bottom:3px #FFDEAD solid; 
+}
+
+/*Footer*/
+.footer{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.footer h3{
+	font: 18px;
+	line-height: 25px;
+	color: #ccb507;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+}
+
+.footer h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #ccb507;
+	margin: 6px 0 12px 0;
+}
+
+.footer_historia{
+	padding-right: 40px;
+}
+
+.footer_contato ul li{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+.footer_redes ul li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.footer_redes ul li a{
+	border: 3px solid #ccb507;
+	display: block;
+	padding: 5px; 
+}
